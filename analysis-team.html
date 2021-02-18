@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/library/bootstrap.css">
+    <link rel="stylesheet" href="css/library/aos.css">
+    <link rel="stylesheet" href="css/library/Chart.min.css">
+    <link rel="stylesheet" href="css/library/all.min.css">
+
+    <!--main style-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--loading screen-->
+    <div class="loading">
+        <div class="loadingspinner"></div>
+
+    </div>
+    <!--end loading screen-->
+    <div class="clearfix">
+        <aside>
+
+            <div class="logo my-2 text-center position-relative">
+                <!--   <img src="img/لوجو مشاعر2-0١.png" height="70px" alt="" srcset="">-->
+                <h3 class="text-center">logo</h3>
+
+                <i class="fas fa-times" id="close"></i>
+            </div>
+            <div class="scrollbar" id="style-4">
+                <div class="force-overflow">
+                    <ul>
+                        <!-- active item-->
+                        <li class="">
+                            <a href="index.html">
+                                <i class="fas fa-calendar-alt"></i> مباريات اليوم</a>
+                        </li>
+                        <li class="active-nav">
+                            <a href="analysis-team.html"> <i class="far fa-chart-bar"></i> تحليل الفرق</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <nav class=" bg-one py-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fas fa-bars" id="big-bar"></i>
+                            <i class="fas fa-bars" id="small-bar"></i>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </nav>
+            <div class=" mb-5 mt-3 bg-main mx-3 pt-2 pb-5">
+
+                <div id="loading">
+                    <div id="ball-loading-wrap">
+                        <div id="ball">
+                            <svg viewBox="0 0 18.9 19">
+                                                                      <path fill="#ffffff"
+                                                                                d="M11.2 12.9H7.8L6.4 15l1.1 2.7c.6.2 1.3.2 2 .2s1.4-.1 2.1-.3l1-2.6-1.4-2.1zM13 9.3l-1 3 1.5 2.3 2.7.2c1-1.2 1.6-2.8 1.8-4.4l-2.2-1.7-2.8.6zm-5.9 3L6 9.1l-2.8-.7L1 10.1c.1 1.7.8 3.3 1.8 4.6l2.8-.2 1.5-2.2zm-.6-4.1L9 6.4V3.2L6.7 1.5c-1.8.6-3.3 1.8-4.3 3.3l1 2.6 3.1.8zM10 6.4l2.7 1.9 2.9-.7 1-2.7c-1-1.5-2.5-2.7-4.3-3.4L10 3.2v3.2z">
+                                                                      </path>
+                                                                      <path fill="#2d2a6c"
+                                                                                d="M17.3 4c-1-1.5-2.5-2.6-4.2-3.3C12 .3 10.8 0 9.5 0S7 .3 5.9.7c-1.6.7-3 1.8-4.1 3.2C.7 5.4 0 7.4 0 9.5c0 .5 0 .9.1 1.4.2 1.5.8 2.9 1.6 4.1 1.4 2 3.5 3.4 6 3.9.6 0 1.2.1 1.8.1s1.2-.1 1.8-.2c2.5-.5 4.6-1.9 6-4 .8-1.1 1.3-2.4 1.5-3.8.1-.5.1-1 .1-1.5.1-2-.5-3.9-1.6-5.5zM10 3.2l2.3-1.7c1.8.6 3.3 1.8 4.3 3.4l-1 2.7-2.9.7L10 6.4V3.2zM6.7 1.5L9 3.2v3.2L6.5 8.2l-3.1-.8-1-2.6c1-1.5 2.5-2.7 4.3-3.3zM2.8 14.7c-1-1.3-1.7-2.9-1.8-4.6l2.2-1.7 2.8.7 1 3.2-1.5 2.3-2.7.1zm8.8 3c-.7.2-1.4.3-2.1.3-.7 0-1.3-.1-2-.2l-1.1-2.7L7.8 13h3.4l1.4 2.2-1 2.5zm4.6-3l-2.7-.2-1.5-2.2 1-3 2.8-.7 2.2 1.7c-.2 1.7-.8 3.2-1.8 4.4z">
+                                                                      </path>
+                                                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 mx-2">
+                    <div class="col-md-4">
+
+                        <div class="mb-2 pr-1">اختر الموسم <i class="far fa-calendar-alt px-1"></i></div>
+                        <select class="form-control form-control-lg from-Session">
+                                  <option value="">  اختر موسم</option>
+                                  <option value="allSession"> كل المواسم</option>
+                                  <option value="2009"> 2009 </option>
+                                  <option value="2010"> 2010 </option>
+                                  <option value="2011"> 2011 </option>
+                                  <option value="2012"> 2012 </option>
+                                  <option value="2013"> 2013 </option>
+                                  <option value="2014"> 2014 </option>
+                                  <option value="2015"> 2015 </option>
+                        </select>
+                        <div class="to">
+                            <div class="mb-2 pr-1"> الي <i class="far fa-calendar-alt px-1 mt-3"></i></div>
+                            <select class="form-control form-control-lg to-Session">
+                                      <option value="2009"> 2009 </option>
+                                      <option value="2010"> 2010 </option>
+                                      <option value="2011"> 2011 </option>
+                                      <option value="2012"> 2012 </option>
+                                      <option value="2013"> 2013 </option>
+                                      <option value="2014"> 2014 </option>
+                                      <option value="2015"> 2015 </option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <div class="w-100">
+
+                            <div class="mb-2 pr-1">اختر نوع الدوري <i class="fab fa-font-awesome-flag px-1"></i></div>
+                            <select class="form-control form-control-lg">
+                              <option>Large select</option>
+                    </select>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="mb-2 pr-1">اختر الفريق <i class="far fa-futbol px-1"></i></div>
+                            <select class="form-control form-control-lg ">
+                              <option>Large select</option>
+                    </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mt-4 mx-2">
+                    <div class="pt-2 fix-table col-md-12 table-responsive text-center">
+                        <table class="table table-hover">
+                            <thead class="text-center">
+                                <tr class="text-center">
+                                    <th scope="col" class="text-center">المركز</th>
+                                    <th scope="col" class="text-center">لوجو</th>
+                                    <th scope="col" class="text-center">اسم لفريق</th>
+                                    <th scope="col" class="text-center">عدد المباريات</th>
+                                    <th scope="col" class="text-center">عدد الفوز</th>
+                                    <th scope="col" class="text-center">عدد الهزيمه</th>
+                                    <th scope="col" class="text-center">عدد التعادل</th>
+                                    <th scope="col" class="text-center"> عدد الانذارات</th>
+                                    <th scope="col" class="text-center"> عدد الطرود </th>
+                                    <th scope="col" class="text-center">عددالنقاط</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr class="text-center">
+                                    <th scope="row" class="text-center">1</td>
+                                        <td class="text-center"><img src="img/1.png" width="30px" height="30px" alt="" srcset="">
+                                        </td>
+                                        <td class="text-center">الهلال</td>
+                                        <td class="text-center">30</td>
+                                        <td class="text-center">20</td>
+                                        <td class="text-center">2</td>
+                                        <td class="text-center">8</td>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center">68</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class=" row mx-2">
+                    <div class="col-md-12">
+                        <hr />
+
+                    </div>
+                </div>
+
+                <div class="row mx-2">
+
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="bg-white radius-5 mb-3 py-3 shadow px-1 text-center">
+
+                            <div class="bg-white radius-5  ">
+                                <p class="border-bottom  py-2 f-20 weight-600 mx-2 px-1 text-center">
+                                    عدد الاهداف
+                                </p>
+                                <canvas id="pieChart" width="600" height="400"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="bg-white radius-5 mb-3 py-3 shadow px-1 text-center">
+
+                            <div class="bg-white radius-5  ">
+                                <p class="border-bottom  py-2 f-20 weight-600 mx-2 px-1 text-center">
+                                    عدد الانتصارات
+                                </p>
+                                <canvas id="pieChart2" width="600" height="400"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="bg-white radius-5 mb-3 py-3 shadow px-1 text-center">
+
+                            <div class="bg-white radius-5  ">
+                                <p class="border-bottom  py-2 f-20 weight-600 mx-2 px-1 text-center">
+
+                                    عدد الهزائم
+                                </p>
+                                <canvas id="pieChart3" width="600" height="400"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class=" row mx-2">
+                    <div class="col-md-12">
+                        <hr />
+
+                    </div>
+                </div>
+                <div class="row mx-2">
+
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="bg-white radius-10 my-2  shadow overflow-hidden" id="zone">
+                            <p class="border-bottom  py-2 f-20 weight-600 mx-2 text-center">
+
+                                عدد الاهداف
+                            </p>
+                            <canvas id="line" width="400" height="300"></canvas>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="bg-white radius-10 my-2  shadow overflow-hidden" id="zone">
+                            <p class="border-bottom  py-2 f-20 weight-600 mx-2 text-center">
+                                عدد الهزائم
+                            </p>
+                            <canvas id="line2" width="400" height="300"></canvas>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="bg-white radius-10 my-2  shadow overflow-hidden" id="zone">
+                            <p class="border-bottom  py-2 f-20 weight-600 mx-2 text-center">
+                                عدد الانتصارات
+                            </p>
+                            <canvas id="line3" width="400" height="300"></canvas>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/jquery-3-4-1-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/analysis.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+$shadow:red;
+@for $var from 10 to 40 {
+    .f-#{$var} {
+        font-size: $var+px !important;
+    }
+}
+
+$width: 90,
+80,
+70,
+60,
+50,
+40,
+30,
+20,
+10;
+@each $width in $width {
+    .w-#{$width} {
+        width: $width+% !important;
+    }
+}
+
+$weight: 500,
+600,
+700,
+800,
+900,
+;
+@each $weight in $weight {
+    .weight-#{$weight} {
+        font-weight: $weight !important;
+    }
+}
+
+$radius: 5,
+10,
+15,
+20,
+25;
+@each $radius in $radius {
+    .radius-#{$radius} {
+        border-radius: $radius+px;
+        -webkit-border-radius: $radius+px;
+        -moz-border-radius: $radius+px;
+        -ms-border-radius: $radius+px;
+        -o-border-radius: $radius+px;
+    }
+}
