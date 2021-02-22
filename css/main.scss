@@ -348,7 +348,7 @@ main {
 .fa-bars {
     cursor: pointer !important;
     font-size: 25px;
-    color: #56D224 !important;
+    color: #04B7D8 !important;
 }
 
 @media(min-width:769px)and(max-width:1024px) {
@@ -397,7 +397,7 @@ main {
 }
 
 #small-bar {
-    color: #56D224 !important;
+    color: #04B7D8 !important;
 }
 
 @media(min-width:1px)and(max-width:768px) {
@@ -410,8 +410,8 @@ main {
         position: absolute;
         top: 0px;
         left: 5px;
-        color: #56D224;
-        border: 2px solid #56D224;
+        color: #04B7D8;
+        border: 2px solid #04B7D8;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -522,7 +522,7 @@ aside {
 }
 
 aside ul .active-nav {
-    background-color: #56D224;
+    background-color: #04B7D8;
     color: #fff !important;
 }
 
@@ -546,12 +546,13 @@ bg-one {
 }
 
 .f-1 {
-    color: #56D224;
+    color: #04B7D8;
 }
 
-.col-md-4 {
+.col-md-4,
+.col-md-3 {
     i {
-        color: #56D224;
+        color: #04B7D8;
     }
 }
 

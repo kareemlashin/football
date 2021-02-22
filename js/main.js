@@ -52,9 +52,13 @@ $(document).ready(function() {
         let val = $('.from-Session').val();
         if (val == 'allSession') {
             $('.to').hide();
+            $(".choose").removeClass('col-md-3');
+            $(".choose").addClass('col-md-4');
         } else {
             $('.to-Session option').prop('disabled', false);
             $('.to').show();
+            $(".choose").removeClass('col-md-4');
+            $(".choose").addClass('col-md-3');
             $('.to-Session option').each(function() {
                 if (val >= $(this).attr('value')) {
                     $(this).prop('disabled', true);
