@@ -870,4 +870,9 @@ bg-one {
     padding-left: 23px !important;
   }
 }
+
+.fix-ing {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
